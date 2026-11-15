@@ -12,6 +12,33 @@
             scroll-behavior: smooth;
         }
 
+        /* Paleta Harmoniosa de Tons Neutros: Bege Claro, Areia, Cáqui e Taupe */
+        body,
+        #perfil,
+        #formacao,
+        #projetos,
+        #contato {
+            background-color: #f6efe2 !important;
+            color: #3d3428;
+        }
+
+        /* Navbar e Rodapé em tom Marrom-Cáqui Escuro Neutro */
+        .bg-neutro-escuro {
+            background-color: #4a3f31 !important;
+        }
+
+        /* Links do Menu (Perfil, Formação, Projetos, Contato) em Branco Puro */
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f6efe2 !important;
+            text-decoration: underline;
+        }
+
         .carousel-item {
             height: 85vh;
         }
@@ -27,28 +54,94 @@
             object-fit: cover;
         }
 
+        /* Quadro da foto de perfil em Bege-Areia e Cáqui (sem azul) */
+        .box-foto-perfil {
+            background-color: #eadecd !important;
+            border: 2px solid #b5a27f !important;
+        }
+
+        /* Títulos e textos em tons de Cáqui */
+        .titulo-caqui {
+            color: #6e5c3b !important;
+        }
+
+        .subtitulo-caqui {
+            color: #8c7651 !important;
+        }
+
+        .badge-caqui {
+            background-color: #7c6a46 !important;
+            color: #ffffff !important;
+        }
+
+        .badge-areia {
+            background-color: #dfd1b8 !important;
+            color: #4a3f31 !important;
+        }
+
+        /* Cards em tom Creme/Marfim com borda Cáqui */
+        .card-neutro {
+            background-color: #fdfaf3 !important;
+            border: 1px solid #e2d5be !important;
+        }
+
+        .card-borda-topo-caqui {
+            background-color: #fdfaf3 !important;
+            border: 1px solid #e2d5be !important;
+            border-top: 4px solid #8c7651 !important;
+        }
+
+        /* Botões em tom Cáqui e Bege */
+        .btn-caqui {
+            color: #6e5c3b;
+            border: 2px solid #8c7651;
+            background-color: #f6efe2;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .btn-caqui:hover {
+            background-color: #7c6a46;
+            border-color: #7c6a46;
+            color: #ffffff;
+        }
+
+        .btn-caqui-solido {
+            background-color: #7c6a46;
+            border: 2px solid #7c6a46;
+            color: #ffffff;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .btn-caqui-solido:hover {
+            background-color: #5e4f33;
+            border-color: #5e4f33;
+            color: #ffffff;
+        }
+
         .project-img {
             height: 220px;
             object-fit: cover;
             object-position: top center;
         }
 
-        /* Recurso Novo: Animação suave (hover) nos cards de Formação e Projetos */
+        /* Recurso Novo: Animação suave (hover) nos cards */
         .card-hover {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 12px 24px rgba(94, 79, 51, 0.18) !important;
         }
     </style>
 </head>
 
-<body class="bg-light">
+<body>
 
     <!-- 1. MENU DE NAVEGAÇÃO (NAVBAR) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-neutro-escuro sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Iraci Berto Gomes.dev</a>
 
@@ -59,16 +152,16 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#perfil">Perfil</a>
+                        <a class="nav-link text-white fw-semibold" href="#perfil">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#formacao">Formação</a>
+                        <a class="nav-link text-white fw-semibold" href="#formacao">Formação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
+                        <a class="nav-link text-white fw-semibold" href="#projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link text-white fw-semibold" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -106,22 +199,22 @@
         </button>
     </div>
 
-    <!-- 3. SEÇÃO DE PERFIL (Com fundo azul claro personalizado) -->
-    <section id="perfil" class="min-vh-100 d-flex align-items-center py-5" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);">
+    <!-- 3. SEÇÃO DE PERFIL -->
+    <section id="perfil" class="min-vh-100 d-flex align-items-center py-5">
         <div class="container py-4">
             <div class="row align-items-center g-5">
-                <div class="col-lg-4 text-center p-4 rounded-4 shadow-sm" style="background-color: #cbe7ff; border: 2px solid #93c5fd;">
+                <div class="col-lg-4 text-center p-4 rounded-4 shadow-sm box-foto-perfil">
                     <img src="imagens/perfil.png" alt="Foto de perfil de Iraci Berto Gomes"
                         class="profile-img rounded-circle border border-4 border-white shadow img-fluid mb-3">
 
-                    <h4 class="fw-bold mt-3 mb-1">Iraci Berto Gomes</h4>
+                    <h4 class="fw-bold mt-3 mb-1 titulo-caqui">Iraci Berto Gomes</h4>
                     <p class="text-muted mb-2">Desenvolvimento de Sistemas</p>
-                    <span class="badge bg-primary px-3 py-2">Portfólio acadêmico e profissional</span>
+                    <span class="badge badge-caqui px-3 py-2">Portfólio acadêmico e profissional</span>
                 </div>
 
                 <div class="col-lg-8">
-                    <p class="text-uppercase text-muted fw-semibold mb-2">Desenvolvimento de Sistemas • P&D Operacional</p>
-                    <h2 class="text-primary fw-bold mb-3">Perfil Profissional</h2>
+                    <p class="text-uppercase fw-semibold mb-2 subtitulo-caqui">Desenvolvimento de Sistemas • P&D Operacional</p>
+                    <h2 class="fw-bold mb-3 titulo-caqui">Perfil Profissional</h2>
 
                     <p class="fs-5 text-secondary">
                         Sou profissional atuante na área de Pesquisa e Desenvolvimento Operacional e estudante de
@@ -131,36 +224,36 @@
 
                     <div class="row mt-4 g-3">
                         <div class="col-md-6">
-                            <div class="card border-0 shadow-sm h-100 card-hover">
+                            <div class="card shadow-sm h-100 card-hover card-neutro">
                                 <div class="card-body">
-                                    <h6 class="fw-bold mb-2">Localização</h6>
+                                    <h6 class="fw-bold mb-2 titulo-caqui">Localização</h6>
                                     <p class="text-muted mb-0">São Paulo/SP</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="card border-0 shadow-sm h-100 card-hover">
+                            <div class="card shadow-sm h-100 card-hover card-neutro">
                                 <div class="card-body">
-                                    <h6 class="fw-bold mb-2">Área de interesse</h6>
+                                    <h6 class="fw-bold mb-2 titulo-caqui">Área de interesse</h6>
                                     <p class="text-muted mb-0">Desenvolvimento Web, Python e Automação</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="card border-0 shadow-sm h-100 card-hover">
+                            <div class="card shadow-sm h-100 card-hover card-neutro">
                                 <div class="card-body">
-                                    <h6 class="fw-bold mb-2">Formação</h6>
+                                    <h6 class="fw-bold mb-2 titulo-caqui">Formação</h6>
                                     <p class="text-muted mb-0">Administração, Logística e Desenvolvimento de Sistemas</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="card border-0 shadow-sm h-100 card-hover">
+                            <div class="card shadow-sm h-100 card-hover card-neutro">
                                 <div class="card-body">
-                                    <h6 class="fw-bold mb-2">Objetivo</h6>
+                                    <h6 class="fw-bold mb-2 titulo-caqui">Objetivo</h6>
                                     <p class="text-muted mb-0">Criar interfaces modernas, automações e soluções digitais</p>
                                 </div>
                             </div>
@@ -168,11 +261,11 @@
                     </div>
 
                     <div class="mt-4">
-                        <h5 class="fw-semibold mb-3">Tecnologias e ferramentas</h5>
+                        <h5 class="fw-semibold mb-3 titulo-caqui">Tecnologias e ferramentas</h5>
 
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <div class="card border-0 shadow-sm h-100 card-hover">
+                                <div class="card shadow-sm h-100 card-hover card-neutro">
                                     <div class="card-body">
 
                                         <div class="d-flex align-items-center gap-3 mb-3">
@@ -204,7 +297,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <div class="card border-0 shadow-sm h-100 card-hover">
+                                <div class="card shadow-sm h-100 card-hover card-neutro">
                                     <div class="card-body">
 
                                         <div class="d-flex align-items-center gap-3 mb-3">
@@ -246,11 +339,11 @@
          4. RECURSO NOVO ADICIONADO: NOVA SEÇÃO DE FORMAÇÃO ACADÊMICA
          (Senac Santo Amaro, UNIP Marquês de São Vicente e ETEC)
          ================================================================= -->
-    <section id="formacao" class="py-5 bg-light border-top border-bottom">
+    <section id="formacao" class="py-5 border-top border-bottom" style="border-color: #dfd1b8 !important;">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <span class="badge bg-primary px-3 py-2 mb-2"> Trajetória Acadêmica</span>
-                <h2 class="text-primary fw-bold">Formação Acadêmica</h2>
+                <span class="badge badge-caqui px-3 py-2 mb-2">Trajetória Acadêmica</span>
+                <h2 class="fw-bold titulo-caqui">Formação Acadêmica</h2>
                 <p class="text-muted mb-0">
                     Minha base sólida unindo Gestão Empresarial, Logística e Desenvolvimento de Sistemas.
                 </p>
@@ -259,13 +352,13 @@
             <div class="row g-4">
                 <!-- Card Formação 1: ETEC -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover border-top border-4 border-primary">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <div class="card-body p-4 d-flex flex-column">
                             <div class="mb-3">
-                                <span class="badge bg-success">Atualmente Estudante</span>
+                                <span class="badge badge-caqui">Atualmente Estudante</span>
                             </div>
-                            <h5 class="card-title fw-bold text-dark">Técnico em Desenvolvimento de Sistemas</h5>
-                            <h6 class="text-primary fw-semibold mb-3">ETEC — Centro Paula Souza</h6>
+                            <h5 class="card-title fw-bold titulo-caqui">Técnico em Desenvolvimento de Sistemas</h5>
+                            <h6 class="fw-semibold mb-3 subtitulo-caqui">ETEC — Centro Paula Souza</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Formação técnica focada em programação web (HTML5, CSS3, Flexbox, Bootstrap), lógica de
                                 programação e algoritmos em Python, modelagem de banco de dados (MER/DER) e projetos no GitHub.
@@ -276,13 +369,13 @@
 
                 <!-- Card Formação 2: UNIP -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover border-top border-4 border-primary">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <div class="card-body p-4 d-flex flex-column">
                             <div class="mb-3">
-                                <span class="badge bg-primary">Graduação Tecnológica</span>
+                                <span class="badge badge-areia">Graduação Tecnológica</span>
                             </div>
-                            <h5 class="card-title fw-bold text-dark">Tecnólogo em Logística</h5>
-                            <h6 class="text-primary fw-semibold mb-3">UNIP — Campus Marquês de São Vicente</h6>
+                            <h5 class="card-title fw-bold titulo-caqui">Tecnólogo em Logística</h5>
+                            <h6 class="fw-semibold mb-3 subtitulo-caqui">UNIP — Campus Marquês de São Vicente</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Formação superior voltada ao planejamento de operações, cadeia de suprimentos, controle
                                 de processos logísticos, indicadores operacionais e eficiência no fluxo de informações.
@@ -293,13 +386,13 @@
 
                 <!-- Card Formação 3: SENAC -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover border-top border-4 border-primary">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <div class="card-body p-4 d-flex flex-column">
                             <div class="mb-3">
-                                <span class="badge bg-dark">Bacharelado</span>
+                                <span class="badge badge-areia">Bacharelado</span>
                             </div>
-                            <h5 class="card-title fw-bold text-dark">Bacharelado em Administração</h5>
-                            <h6 class="text-primary fw-semibold mb-3">Senac Santo Amaro</h6>
+                            <h5 class="card-title fw-bold titulo-caqui">Bacharelado em Administração</h5>
+                            <h6 class="fw-semibold mb-3 subtitulo-caqui">Senac Santo Amaro</h6>
                             <p class="card-text text-muted flex-grow-1">
                                 Formação superior em gestão estratégica, administração de projetos, análise de resultados,
                                 tomada de decisão e melhoria contínua de processos organizacionais.
@@ -311,11 +404,12 @@
         </div>
     </section>
 
-    <!-- 5. SEÇÃO DE PROJETOS (Com os links reais do seu GitHub!) -->
-    <section id="projetos" class="bg-white py-5">
+    <!-- 5. SEÇÃO DE PROJETOS (Com os links reais do seu GitHub em Tons Neutros de Bege e Cáqui!) -->
+    <section id="projetos" class="py-5">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="text-primary fw-bold">Projetos</h2>
+                <span class="badge badge-caqui px-3 py-2 mb-2">Portfólio no GitHub</span>
+                <h2 class="fw-bold titulo-caqui">Projetos</h2>
                 <p class="text-muted mb-0">
                     Projetos reais publicados no meu GitHub que representam minha evolução na área de desenvolvimento.
                 </p>
@@ -324,84 +418,84 @@
             <div class="row g-4">
                 <!-- Projeto 1: AGENDA_13 -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p1.png" class="card-img-top project-img rounded-top-4" alt="Portal de Entretenimento Digital">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Portal de Entretenimento Digital (Agenda 13)</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Portal de Entretenimento Digital (Agenda 13)</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Página criada com HTML5, CSS3, Reset CSS e Flexbox em 3 colunas responsivas, publicada no GitHub Pages.
                             </p>
-                            <a href="https://bertogomesiraci-33.github.io/AGENDA_13/portal.html" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://bertogomesiraci-33.github.io/AGENDA_13/portal.html" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 2: AGENDA_11 + projetos Python -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p2.png" class="card-img-top project-img rounded-top-4" alt="Sistema em Python">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Sistemas de Automação em Python</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Sistemas de Automação em Python</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Aplicações desenvolvidas em Python: Monitoramento de Reservatório de Água (Agenda 11) e Calculadora de Consumo Elétrico.
                             </p>
-                            <a href="https://github.com/bertogomesiraci-33/AGENDA_11" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://github.com/bertogomesiraci-33/AGENDA_11" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 3: AGENDA_12 -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p3.png" class="card-img-top project-img rounded-top-4" alt="Meus Sites Favoritos">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Portal Meus Sites Favoritos (Agenda 12)</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Portal Meus Sites Favoritos (Agenda 12)</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Página web desenvolvida com HTML5 e publicada no GitHub Pages, organizando atalhos e descrições dos principais portais web.
                             </p>
-                            <a href="https://bertogomesiraci-33.github.io/AGENDA_12/" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://bertogomesiraci-33.github.io/AGENDA_12/" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 4: Novo-simulador -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p5.png" class="card-img-top project-img rounded-top-4" alt="Simulador de Matemática">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Simulador Interativo (Prep Vestibulinho)</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Simulador Interativo (Prep Vestibulinho)</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Aplicação web Single Page Application (SPA) em HTML5, CSS3 e JavaScript puro com questões inéditas para estudantes.
                             </p>
-                            <a href="https://github.com/bertogomesiraci-33/Novo-simulador" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://github.com/bertogomesiraci-33/Novo-simulador" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 5: Repositório projetos -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p4.png" class="card-img-top project-img rounded-top-4" alt="Repositório de Projetos Python">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Repositório de Projetos Práticos</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Repositório de Projetos Práticos</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Coleção de scripts em Python para cálculo de consumo elétrico (kWh), consumo de água, pesquisa de opinião e descontos.
                             </p>
-                            <a href="https://github.com/bertogomesiraci-33/projetos" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://github.com/bertogomesiraci-33/projetos" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 6: nutri-berto -->
                 <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-4 card-hover">
+                    <div class="card h-100 shadow-sm rounded-4 card-hover card-borda-topo-caqui">
                         <img src="imagens/p6.png" class="card-img-top project-img rounded-top-4" alt="Projeto Nutri-Berto">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Aplicação Web Nutri-Berto</h5>
+                            <h5 class="card-title fw-bold titulo-caqui">Aplicação Web Nutri-Berto</h5>
                             <p class="card-text text-muted flex-grow-1">
                                 Projeto front-end moderno estruturado com React, TypeScript e Vite voltado à área de nutrição e bem-estar.
                             </p>
-                            <a href="https://github.com/bertogomesiraci-33/nutri-berto" target="_blank" class="btn btn-outline-primary mt-auto">Ver projeto</a>
+                            <a href="https://github.com/bertogomesiraci-33/nutri-berto" target="_blank" class="btn btn-caqui mt-auto">Ver projeto</a>
                         </div>
                     </div>
                 </div>
@@ -410,28 +504,29 @@
     </section>
 
     <!-- 6. SEÇÃO DE CONTATO -->
-    <section id="contato" class="min-vh-100 d-flex align-items-center py-5 bg-light">
+    <section id="contato" class="min-vh-100 d-flex align-items-center py-5 border-top" style="border-color: #dfd1b8 !important;">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="text-primary fw-bold">Contato</h2>
+                <span class="badge badge-caqui px-3 py-2 mb-2">Comunicação</span>
+                <h2 class="fw-bold titulo-caqui">Contato</h2>
                 <p class="text-muted">Aberta a oportunidades, projetos e conexões na área de tecnologia e desenvolvimento.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="card shadow-sm border-0 rounded-4 p-4 text-center card-hover">
-                        <h4 class="fw-bold mb-3">Fale comigo</h4>
+                    <div class="card shadow-sm rounded-4 p-4 text-center card-hover card-borda-topo-caqui">
+                        <h4 class="fw-bold mb-3 titulo-caqui">Fale comigo</h4>
                         <p class="text-muted mb-4">
                             Estou em constante aprendizado e disponível para trocar ideias, compartilhar projetos
                             e construir novas conexões profissionais.
                         </p>
                         <div class="d-grid gap-3">
-                            <a href="mailto:bertogomesiraci@gmail.com" class="btn btn-outline-primary btn-lg">Enviar e-mail</a>
-                            <a href="https://github.com/bertogomesiraci-33?tab=repositories" target="_blank" class="btn btn-dark btn-lg">GitHub (@bertogomesiraci-33)</a>
-                            <a href="https://www.linkedin.com/" target="_blank" class="btn btn-primary btn-lg">LinkedIn</a>
+                            <a href="mailto:bertogomesiraci@gmail.com" class="btn btn-caqui btn-lg">Enviar e-mail</a>
+                            <a href="https://github.com/bertogomesiraci-33?tab=repositories" target="_blank" class="btn btn-caqui-solido btn-lg">GitHub (@bertogomesiraci-33)</a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="btn btn-caqui btn-lg">LinkedIn</a>
                         </div>
-                        <hr class="my-4">
+                        <hr class="my-4" style="border-color: #d6c4a2;">
                         <p class="text-muted mb-0">
-                            <span class="fw-semibold">Localização:</span> São Paulo/SP
+                            <span class="fw-semibold titulo-caqui">Localização:</span> São Paulo/SP
                         </p>
                     </div>
                 </div>
@@ -440,7 +535,7 @@
     </section>
 
     <!-- 7. RODAPÉ (FOOTER) -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-neutro-escuro text-light py-4">
         <div class="container text-center">
             <p class="mb-1">© 2026 - Portfólio Profissional — Iraci Berto Gomes</p>
             <small>Desenvolvido com HTML, CSS e Bootstrap (Agenda 15 — ETEC)</small>
