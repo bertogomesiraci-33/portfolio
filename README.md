@@ -29,7 +29,10 @@ Este projeto é o meu **Portfólio Pessoal e Profissional**, desenvolvido e evol
 ## ⚙️ Explicação do Funcionamento do Projeto
 O site funciona em formato de página única (*Single Page*) responsiva, adaptando-se automaticamente a celulares, tablets e computadores:
 1. **Menu de Navegação (`Navbar`):** Fixado no topo (`sticky-top`), possui links internos com fonte branca destacada (`#perfil`, `#formacao`, `#projetos`, `#contato`) que rolam suavemente até cada seção da página. Em telas menores, converte-se em botão recolhível (*hambúrguer*).
-2. **Área de Destaque (`Carousel`):** Posicionada logo abaixo da Navbar, apresenta 3 slides em tela ampla (`85vh`) com transição suave (`carousel-fade`), indicadores inferiores e botões laterais.
+2. **Área de Destaque (`Carousel`):** Posicionada logo abaixo da Navbar, apresenta 3 slides personalizados em tela ampla (`85vh`) com transição suave (`carousel-fade`), combinando a paleta em Bege e Cáqui com ilustrações temáticas de tecnologia e inovação:
+   * **Slide 1 (`imagens/slide1.png`):** *Portfólio Profissional & Acadêmico — Iraci Berto Gomes* (Interfaces Digitais, Web e Automação);
+   * **Slide 2 (`imagens/slide2.png`):** *Formação Acadêmica & Trajetória — Gestão, Logística & TI* (Conectividade Global, Senac, UNIP e ETEC);
+   * **Slide 3 (`imagens/slide3.png`):** *Projetos Reais no GitHub — Soluções Digitais & Web* (Ecossistema de Aplicações e Automação).
 3. **Seção de Perfil (`#perfil`):** Apresenta minha foto de perfil circular, resumo profissional, 4 cards de informações rápidas (Localização, Área de interesse, Formação e Objetivo) e 2 cards listando as tecnologias e ferramentas com ícones `Devicon`.
 4. **Seção de Formação Acadêmica (`#formacao` — Recurso Novo):** Destaca minha trajetória acadêmica em 3 cards estruturados.
 5. **Seção de Projetos (`#projetos`):** Exibe os cards dos meus 6 projetos reais publicados no GitHub (`AGENDA_13`, `AGENDA_11`, `AGENDA_12`, `Novo-simulador`, `projetos` e `nutri-berto`), com botões funcionais que levam diretamente aos sites e repositórios.
